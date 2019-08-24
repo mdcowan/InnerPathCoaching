@@ -1,0 +1,112 @@
+/* BASE LAYOUT
+==================================================
+================================================== */
+
+/*DEFAULTS ======================================= */
+html {
+    font-size: 62.5%; }
+
+body {
+    font: 1.4rem 'Source Code Pro', monospace;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* TYPOGRAPHY ====================================== */
+h1, h2, h3, h4, h5{
+    font-family: 'Righteous', cursive;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    line-height: 3.2rem; }
+
+a {
+    color: #4f83cc;
+    text-decoration: none; }
+
+li{
+    list-style: none;
+}
+
+.emptytext {
+    font-weight: lighter;
+    color: #757575; }
+
+/* BASE STRUCTURE ==================================== */
+
+
+
+/* HEADER ======================================== */
+header div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header img{
+    height: 4rem;
+    width: 4rem;
+}
+
+header h1{
+    padding-left: .4rem;
+}
+
+header nav{
+    display: flex;
+    align-self: center;
+}
+
+header li{
+    align-self: center;
+    font-family: 'Righteous', cursive;
+    font-size: 2.4rem;
+}
+
+header li:not(:last-of-type){
+    border-right: 1px solid;
+    padding-right: .4rem
+}
+
+header li:not(first-of-type){
+    padding-left: .4rem;
+}
+
+header p{
+    background-image: url("https://via.placeholder.com/684x1366");
+    padding: 20rem 0 20rem 0;
+    font: 3.6rem 'Shadows Into Light', cursive;
+    text-align: center;
+    color: #000;
+}
+
+/* WHAT IS ======================================== */
+
+/* WHY ======================================== */
+
+/* SERVICES ======================================== */
+#services h2{
+    text-align: center;
+}
+
+/* BLOG POSTS ======================================== */
+#blog h2{
+    text-align: center;
+}
+
+/* CONTACT ======================================== */
+
+/* FOOTER ======================================== */
