@@ -88,7 +88,7 @@ header li:not(first-of-type){
 header p{
     background-image: url("https://via.placeholder.com/684x1366");
     padding: 20rem 0 20rem 0;
-    font: 3.6rem 'Shadows Into Light', cursive;
+    font: 7.2rem 'Shadows Into Light', cursive;
     text-align: center;
     color: #000;
 }
@@ -105,6 +105,11 @@ header p{
 /* BLOG POSTS ======================================== */
 #blog h2{
     text-align: center;
+}
+
+#blog p {
+    height: 12.8rem;
+    overflow: hidden;
 }
 
 /* CONTACT ======================================== */
