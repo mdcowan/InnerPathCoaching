@@ -1,3 +1,5 @@
+/* Marjana Cowan 8/2019 Project and Portfolio IV */
+
 /* BASE LAYOUT
 ==================================================
 ================================================== */
@@ -45,8 +47,70 @@ li{
     font-weight: lighter;
     color: #757575; }
 
-/* BASE STRUCTURE ==================================== */
+section button {
+    font: 2.4rem 'Shadows Into Light', cursive;
+    border: none;
+}
 
+/* BASE STRUCTURE ==================================== */
+@media (min-width: 576px) {
+    section{
+        padding-top: 4rem;
+    }
+
+    .mobile_discription{
+        display: none;
+    }
+
+    h2{
+        pointer-events: none;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+input:required:invalid, input:focus:invalid{
+    -moz-box-shadow: none;
+    background-color: #cc984f;
+}
+
+textarea:required:invalid, textarea:focus:invalid{
+    -moz-box-shadow: none;
+    background-color: #cc984f;
+}
+
+.not_visible{
+    display: none;
+}
+
+.is_visible{
+    display: block;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+/* xs screen view change*/
+@media (max-width: 575px) {
+    .mobile_discription{
+        display: block;
+    }
+
+    .content_display{
+        display: none;
+    }
+
+    #whatis, #why, #services, #blog{
+        margin-bottom: .2rem;
+    }
+
+    #service, #blog, #contact{
+        margin: 0 2rem 0 2rem;
+    }
+}
 
 
 /* HEADER ======================================== */
@@ -63,43 +127,164 @@ header img{
 
 header h1{
     padding-left: .4rem;
+    display: block;
 }
 
 header nav{
     display: flex;
     align-self: center;
 }
-
-header li{
+header a{
     align-self: center;
     font-family: 'Righteous', cursive;
     font-size: 2.4rem;
+    color: white;
+    text-decoration: none;
 }
 
-header li:not(:last-of-type){
+header a:not(:last-of-type){
     border-right: 1px solid;
     padding-right: .4rem
 }
 
-header li:not(first-of-type){
+header a:not(first-of-type){
     padding-left: .4rem;
 }
 
 header p{
-    background-image: url("https://via.placeholder.com/684x1366");
-    padding: 20rem 0 20rem 0;
+    background: url("../images/pathbgblue.png") no-repeat 0 0 #4f83cc;
+    background-position: center;
+    padding: 14rem 1rem 14rem 1rem;
     font: 7.2rem 'Shadows Into Light', cursive;
     text-align: center;
     color: #000;
+    margin-bottom: 0;
 }
 
-/* WHAT IS ======================================== */
+@media (max-width: 1199px) {
+    header p{
+        font-size: 7rem;
+        padding: 4rem 2rem 4rem 2rem;
+    }
+}
 
-/* WHY ======================================== */
+@media (max-width: 991px){
+    header nav{
+        display: none
+    }
+
+    header p{
+        font-size: 5rem;
+
+    }
+}
+
+@media (max-width: 767px) {
+    header p{
+        font-size: 3.6rem;
+        background: url("../images/pathbgblue_sm.png") no-repeat 0 0 #4f83cc;
+        background-position: center;
+    }
+}
+
+@media (max-width: 575px) {
+    header{
+        margin-bottom: 2rem;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    header img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #logo{
+        padding: 0;
+    }
+}
+
+@media (max-width: 365px) {
+    header p {
+        font-size: 2.8rem;
+    }
+}
+
+/* WHAT IS & WHY======================================== */
+@media (min-width: 576px){
+    #whatis{
+        background-image: linear-gradient(#84b2ff, #fff);
+    }
+
+    #whatis, #why{
+        margin-bottom: 2rem;
+    }
+}
+
+#whatwhy p{
+    overflow: scroll;
+}
+
+#whatis div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+#whatis button{
+    align-self: flex-end;
+    text-align: right;
+}
+
+@media (max-width: 1199px){
+    #whatwhy p:nth-of-type(2){
+        max-height: 288px;
+    }
+}
+
+
+@media (max-width: 991px){
+
+    #whatis div:first-of-type{
+        max-width: 435px;
+    }
+
+    #whatis img, #why img{
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    #whatis_content{
+        background-image: linear-gradient(#84b2ff, #fff);
+    }
+
+    #why_content{
+        background-image: linear-gradient(#83cc4f, #fff);
+    }
+}
+
 
 /* SERVICES ======================================== */
-#services h2{
-    text-align: center;
+@media (min-width: 576px){
+    #services{
+        background: linear-gradient(rgba(255,255,255,1) 0%, rgba(175,113,240,1) 14%, rgba(175,113,240,1) 86%, rgba(255,255,255,1) 100%);
+        padding-bottom: 3rem;
+    }
+
+    #services h2{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 575px){
+    #services div{
+        box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+        background-image: linear-gradient(#7c43bd, #fff);
+    }
 }
 
 /* BLOG POSTS ======================================== */
@@ -108,10 +293,89 @@ header p{
 }
 
 #blog p {
-    height: 12.8rem;
-    overflow: hidden;
+    overflow: scroll;
+}
+
+@media (max-width: 575px){
+    #blog h2{
+        text-align: left;
+    }
+
+    #blog div:first-of-type{
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.9);
+        background-image: linear-gradient(#84b2ff, #fff);
+    }
+
 }
 
 /* CONTACT ======================================== */
+#contact{
+    background-image: linear-gradient(#fff, #83cc4f);
+}
+#contact form{
+    align-self: flex-end;
+}
+#contact input, #contact textarea{
+    width: 100%;
+}
+#contact button, #contact input:not(first-of-type), #contact textarea{
+    margin: 1rem 0 1rem 0;
+}
+
+@media (max-width: 575px){
+    #contact{
+        background: none;
+    }
+    #contact div{
+        padding: 0;
+    }
+    #contact form{
+        box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+        background-image: linear-gradient(#fff, #83cc4f);
+    }
+}
 
 /* FOOTER ======================================== */
+footer{
+    background-color: #000;
+    margin: 0;
+}
+
+footer li{
+    margin-left: .4rem;
+}
+
+footer img{
+    height: 25px;
+    width: 25px;
+}
+
+footer form{
+    height: 25px;
+    padding-left: 1rem;
+}
+
+footer ul{
+    margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+    footer{
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    footer img:first-of-type{
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 575px){
+    footer{
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    footer form{
+        display: none;
+    }
+}
