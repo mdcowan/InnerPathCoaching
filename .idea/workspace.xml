@@ -4,7 +4,6 @@
     <list default="true" id="59f1deb7-3dff-4a6e-a5bc-602b1b89121e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,17 +19,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1077">
+            <state relative-caret-position="782">
               <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="309" column="4" selection-start-line="309" selection-start-column="4" selection-end-line="309" selection-end-column="4" />
+            <state relative-caret-position="841">
+              <caret line="309" selection-start-line="309" selection-end-line="309" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -38,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="1904">
               <caret line="112" column="63" selection-start-line="112" selection-start-column="63" selection-end-line="112" selection-end-column="63" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -75,12 +83,13 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="198" />
-    <option name="y" value="5" />
+    <option name="x" value="497" />
+    <option name="y" value="-13" />
     <option name="width" value="1377" />
     <option name="height" value="1026" />
   </component>
@@ -94,13 +103,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="ProjectAndPortfolio4Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectAndPortfolio4Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectAndPortfolio4Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectAndPortfolio4Project" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="mdcowan.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mdcowan.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -148,18 +152,20 @@
       <workItem from="1566598691822" duration="8863000" />
       <workItem from="1566610716775" duration="3187000" />
       <workItem from="1566665182545" duration="48566000" />
-      <workItem from="1566788767288" duration="1229000" />
+      <workItem from="1566788767288" duration="1309000" />
+      <workItem from="1566945975740" duration="822000" />
+      <workItem from="1566947874058" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67124000" />
+    <option name="totallyTimeSpent" value="68064000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -197,45 +203,16 @@
     <entry file="file://$PROJECT_DIR$/../DWS2_Project/css/main.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mdcowan.github.io/css/main.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="326" selection-start-line="326" selection-end-line="326" selection-end-column="28" />
-          <folding>
-            <element signature="e#2000#2028#0" />
-            <element signature="e#2051#2077#0" />
-            <element signature="e#2089#2150#0" />
-            <element signature="e#2164#2311#0" />
-            <element signature="e#2328#2365#0" />
-            <element signature="e#2374#2395#0" />
-            <element signature="e#2408#2465#0" />
-            <element signature="e#2477#2609#0" />
-            <element signature="e#2638#2702#0" />
-            <element signature="e#2730#2793#0" />
-            <element signature="e#2821#2884#0" />
-            <element signature="e#2911#2973#0" />
-            <element signature="e#3002#3067#0" />
-            <element signature="e#3082#3139#0" />
-            <element signature="e#3211#3311#0" />
-            <element signature="e#3327#3359#0" />
-            <element signature="e#3374#3502#0" />
-            <element signature="e#3520#3788#0" />
-            <element signature="e#3801#3860#0" />
-            <element signature="e#3880#4086#0" />
-            <element signature="e#4159#4292#0" />
-            <element signature="e#4329#4407#0" />
-            <element signature="e#4443#4523#0" />
-            <element signature="e#4549#4568#0" />
-            <element signature="e#4931#4994#0" />
-            <element signature="e#5011#5032#0" />
-            <element signature="e#5084#5113#0" />
-          </folding>
+        <state relative-caret-position="782">
+          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="1904">
           <caret line="112" column="63" selection-start-line="112" selection-start-column="63" selection-end-line="112" selection-end-column="63" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -243,17 +220,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1077">
-          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+        <state relative-caret-position="841">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="309" column="4" selection-start-line="309" selection-start-column="4" selection-end-line="309" selection-end-column="4" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
