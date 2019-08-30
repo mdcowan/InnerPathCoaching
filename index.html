@@ -123,18 +123,21 @@
             <div class="d-flex flex-row justify-content-between">
                 <div class="d-flex justify-content-start">
                     <img src="images/subscribe.svg" class="disabled" alt="Subscribe">
+                    <div class="not_visible" id="subscriptionMobileDisplay">
+                        <h2>Subscribe</h2>
+                        <p>Get your free resources to your inbox every week!</p>
+                        <form method="post" action="" role="form">
+                            <input type="email" name="subscribeemail" class="subscribeemail" aria-label="subscription email address" placeholder="Email Address" required />
+                            <button type="button">Subscribe</button>
+                        </form>
+                    </div>
                     <form method="post" action="" role="form">
-                        <div id="subscription-text" class="not_visible">
-                            <h2>Subscribe</h2>
-                            <p>Get your free resources to your inbox every week!</p>
-                        </div>
                         <div class="input-group">
-                            <input type="email" class="form-control" name="subscribeemail" id="subscribeemail" aria-label="subscription email address" aria-describedby="button-addon" placeholder="Email Address" required />
+                            <input type="email" class="form-control subscribeemail" name="subscribeemail" aria-label="subscription email address" aria-describedby="button-addon" placeholder="Email Address" required />
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon">Send</button>
+                                <button class="btn btn-outline-secondary disabled" type="button" id="button-addon">Subscribe</button>
                             </div><!--input group append-->
                         </div>
-
                     </form>
                 </div><!--flext start-->
                 <ul class="d-flex justify-content-between">
@@ -147,9 +150,11 @@
         </footer>
     </div><!--container-->
 
-<script src="js/jquery.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

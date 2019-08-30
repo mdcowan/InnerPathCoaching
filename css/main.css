@@ -78,15 +78,16 @@ img{
     width: 100%;
 }
 
-input:focus:invalid{
-    -moz-box-shadow: none;
-    background-color: #cc984f;
+*:focus{
+    outline: none;
 }
 
+input:focus, textarea:focus{
+    box-shadow: inset 0 0 1rem #83cc4f;
+}
 
-textarea:focus:invalid{
-    -moz-box-shadow: none;
-    background-color: #cc984f;
+input:focus:invalid, textarea:focus:invalid{
+    box-shadow: inset 0 0 1rem #cc984f;
 }
 
 .not_visible{
@@ -390,4 +391,9 @@ footer ul{
     footer form{
         display: none;
     }
+}
+
+/* SUBSCRIPTION MODAL ================================= */
+.modal{
+    margin: auto;
 }

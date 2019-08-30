@@ -12,16 +12,29 @@ class AssignPrototype{
         const page = document.querySelector("body");
         const contactForm = page.querySelector('#contact form');
         const contactSubmit = contactForm.querySelector('button');
-        console.log(contactSubmit);
+        const name = contactForm.querySelector('input[name=name]');
+        const email = contactForm.querySelector('input[name=email]');
+        const phone = contactForm.querySelector('input[name=phone]');
+        const message = contactForm.querySelector('textarea[name=message]');
+
+        function createAlert() {
+            let newAlert = document.createElement("p");
+            let text = document.createTextNode("Missing required field. Please update");
+            newAlert.appendChild(text);
+            newAlert.setAttribute("class", "alert");
+            return newAlert;
+        }
 
         // Contact Form Submit Button Validation
-        function validateForm(){
-            let name = contactForm.querySelector('input[name=name]');
-            let email = contactForm.querySelector('input[name=email]');
-            let phone = contactForm.querySelector('input[name=phone]');
-            let message = contactForm.querySelector('textarea[name=message]');
+        function validateForm(event){
+            event.preventDefault();
             let valid = false;
-            console.log("Validity State: " + name.validity.valid);
+
+            let confirm = contactForm.querySelector('.confirm');
+            if(confirm){
+                confirm.parentNode.removeChild(confirm);
+            }
+
             //allow submit
             let alertText = contactForm.querySelector('p');
             if (name.validity.valid === true){
@@ -32,22 +45,12 @@ class AssignPrototype{
                 }
             }
 
-            if(!valid){
-                let newAlert = document.createElement("p");
-                let text = document.createTextNode("Missing required field. Please update");
-                newAlert.appendChild(text);
-                newAlert.setAttribute("class", "alert");
-                contactForm.insertAdjacentElement("beforeend", newAlert);
-            }
-            else{
+            if(valid){
                 contactSubmit.classList.remove("disabled");
-                name.value = "";
-                email.value = "";
-                phone.value = "";
-                message.value = "";
+                let alert = contactForm.querySelector('.alert');
+                if(alert){
+                    alert.parentNode.removeChild(alert);
 
-                if(alertText){
-                    alertText.parentNode.removeChild(alertText);
                 }
             }
 
@@ -57,12 +60,20 @@ class AssignPrototype{
         //Submit Contact Form event handler
         function addContact(event){
             event.preventDefault();
-            let valid = validateForm();
-            let message = "<div><h2>Thank you!</h2><p>We'll get back to you soon!</p></div>";
+            let valid = validateForm(event);
+            let confirmation = "<div id='confirm'><h2>Thank you!</h2><p>We'll get back to you soon!</p></div>";
 
             if(valid){
+                name.value = "";
+                email.value = "";
+                phone.value = "";
+                message.value = "";
                 contactSubmit.setAttribute("class", "disabled");
-                contactSubmit.insertAdjacentHTML("afterend", message);
+                contactSubmit.insertAdjacentHTML("afterend", confirmation);
+            }
+            else{
+                alert = createAlert();
+                contactForm.insertAdjacentElement("beforeend", alert);
             }
         }
 
@@ -73,7 +84,50 @@ class AssignPrototype{
             };
         })(), true);
 
+        name.addEventListener('blur', validateForm);
+        email.addEventListener('blur', validateForm);
+        phone.addEventListener('blur', validateForm);
+        message.addEventListener('blur', validateForm);
         contactSubmit.addEventListener('click', addContact);
+
+        const subscriptionMobileDisplay = page.querySelector('#subscriptionMobileDisplay');
+
+        /*--Subscription form display and submission-- */
+        // function to open the modal window on mobile
+        function openModal(){
+            subscriptionMobileDisplay.classList.remove("not_visible");
+        }
+
+        // function to close the modal window
+        function closeModal(event){
+            event.preventDefault();
+
+            console.log(event);
+            if (event.target === subscriptionMobileDisplay) {
+                subscriptionMobileDisplay.classList.add("not_visible");
+            }
+        }
+
+        /* The mobile sized design allows click actions on the subscription icon to open the modal, where as the desktop prevents any click actions via CSS */
+        const mobileSubscribeIcon = page.querySelector('footer img');
+        mobileSubscribeIcon.addEventListener('click', openModal);
+        subscriptionMobileDisplay.addEventListener('click', closeModal);
+
+        const subscriptionForm = page.querySelector('footer form');
+        const subscribeSubmit = subscriptionForm.querySelector('button');
+        const subscriptionEmail = subscriptionForm.querySelector('.subscribeemail');
+
+        /*-- Subcribe form --*/
+        function addSubscription(event){
+            event.preventDefault();
+            if(subscriptionEmail.validity.valid === true){
+                subscribeSubmit.classList.remove("disabled");
+            }
+
+
+        }
+
+        subscribeSubmit.addEventListener('click', addSubscription);
 
         /* --------------- Mobile Accordion -------------------------*/
         function viewContent(event){
