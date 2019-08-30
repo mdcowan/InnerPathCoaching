@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Righteous|Shadows+Into+Light|Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
     <!-- Marjana Cowan 8/2019 Project and Portfolio IV -->
     <title>Inner Path Coaching</title>
 </head>
@@ -80,7 +83,7 @@
         <p class="mobile_discription">Your FREE resource</p>
             <div class="d-flex flex-column flex-md-row">
                 <article class="card content_display">
-                    <img src="images/blog1.jpg" class="card-img-top">
+                    <img src="images/blog1.jpg" alt="image of rain" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">How We Perceive Rain</h3>
                         <p class="card-text">Rain can remind us of many things. We can feel miserable about the weather and pledge to never go outside. It’s not the event itself, it’s how we perceive it.</p>
@@ -88,7 +91,7 @@
                     </div><!--card body-->
                 </article>
                 <article class="card ml-md-4 mt-4 mt-md-0 content_display">
-                    <img src="images/blog2.jpg" class="card-img-top">
+                    <img src="images/blog2.jpg" alt="image of a man with sunglasses" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">Don’t Aspire To Make Others Envious</h3>
                         <p class="card-text">We live in a world of constant comparisons. Our Instagram accounts are designed to make others envious of our lifestyle. And we constantly check to make sure that we are keeping ahead of the next guy.</p>
@@ -96,7 +99,7 @@
                     </div><!--card body-->
                 </article>
                 <article class="card ml-md-4 mt-4 mt-md-0 content_display">
-                    <img src="images/blog3.jpg" class="card-img-top">
+                    <img src="images/blog3.jpg" alt="image of a woman" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">My Life with an Alcoholic Parent</h3>
                         <p class="card-text">Be the person who breaks the cycle. If you were judged, choose understanding. If you were rejected, choose acceptance. If you were shamed, choose compassion. </p>
@@ -111,11 +114,11 @@
                 <p class="mobile_discription">Let's get started!</p>
                 <p class="content_display">Whether you simply need additional tools and accountability to achieve what you want in life, or you are searching for more meaning, direction and fulfilment, Inner Path Coaching's personal development training will help you get there. Take the first step toward your best life today. Schedule your complimentary coaching consultation and webinar (about 90 minutes by phone and with your computer online) by completing this form.</p>
             </div><!--column-->
-            <form method="post" action="" role="form" class="col-lg-6 order-lg-1 content_display">
+            <form method="post" action="/form_submissions/contact_form.txt" class="col-lg-6 order-lg-1 content_display">
                 <input type="text" name="name" id="name" aria-label="name" placeholder="Full Name (required)" required class="row"/>
                 <input type="email" name="email" id="email" aria-label="email" placeholder="Email Address (required)" required class="row"/>
                 <input type="tel" name="phone" id="phone" aria-label="phone" placeholder="Phone Number" class="row"/>
-                <textarea rows="10" name="message" id="message" aria-label="message" placeholder="Message (required)" required class="row"/></textarea>
+                <textarea rows="10" name="message" id="message" aria-label="message" placeholder="Message (required)" required class="row"></textarea>
                 <button class="row disabled">Submit</button>
             </form>
         </section>
@@ -126,12 +129,12 @@
                     <div class="not_visible" id="subscriptionMobileDisplay">
                         <h2>Subscribe</h2>
                         <p>Get your free resources to your inbox every week!</p>
-                        <form method="post" action="" role="form">
+                        <form method="post" action="/form_submissions/subscription_form.txt">
                             <input type="email" name="subscribeemail" class="subscribeemail" aria-label="subscription email address" placeholder="Email Address" required />
                             <button type="button">Subscribe</button>
                         </form>
                     </div>
-                    <form method="post" action="" role="form">
+                    <form method="post" action="/form_submissions/subscription_form.txt">
                         <div class="input-group">
                             <input type="email" class="form-control subscribeemail" name="subscribeemail" aria-label="subscription email address" aria-describedby="button-addon" placeholder="Email Address" required />
                             <div class="input-group-append">

@@ -21,6 +21,10 @@ button{
     background-image: linear-gradient(#fff, #7c43bd);
 }
 
+button:hover{
+    background-image: linear-gradient(#fff, #83cc4f);
+}
+
 /* TYPOGRAPHY ====================================== */
 h1, h2, h3, h4, h5{
     font-family: 'Righteous', cursive;
@@ -118,6 +122,12 @@ input:focus:invalid, textarea:focus:invalid{
 
     #service, #blog, #contact{
         margin: 0 2rem 0 2rem;
+    }
+
+    .mobile_nav:hover{
+        text-shadow: .4rem .4rem .4rem gray;
+        text-decoration: underline;
+        cursor: pointer;
     }
 }
 
@@ -316,6 +326,11 @@ header p{
     padding: 0 2rem 0 2rem;
     font: 2.4rem 'Shadows Into Light', cursive;
     background-image: linear-gradient(#fff, #84b2ff);
+}
+
+#blog a:hover{
+    background-image: linear-gradient(#fff, #7c43bd);
+    text-decoration: none;
 }
 
 /* CONTACT ======================================== */
